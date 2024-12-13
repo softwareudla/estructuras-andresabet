@@ -61,7 +61,7 @@ int menu() {
     printf("1. Registrar libro\n");
     printf("2. Mostrar lista de libros\n");
     printf("3. Buscar libro por ID\n");
-    printf("4. Buscar libro por título\n");
+    printf("4. Buscar libro por titulo\n");
     printf("5. Actualizar estado del libro\n");
     printf("6. Eliminar libro\n");
     printf("7. Salir\n");
