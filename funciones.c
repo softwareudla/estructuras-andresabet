@@ -33,8 +33,13 @@ void registrarLibro(struct Libro libros[], int *contador) {
     scanf(" %[^\n]", nuevoLibro.titulo);
     printf("Ingrese autor del libro: ");
     scanf(" %[^\n]", nuevoLibro.autor);
-    printf("Ingrese anio de publicacion: ");
-    scanf("%d", &nuevoLibro.anio);
+    do {
+        printf("Ingrese año de publicacion: ");
+        scanf("%d", &nuevoLibro.anio);
+        if (nuevoLibro.anio <= 0) {
+            printf("Error: El año de publicacion no debe ser negativo.\n");
+        }
+    } while (nuevoLibro.anio <= 0);
     strcpy(nuevoLibro.estado, DISPONIBLE);
 
     libros[*contador] = nuevoLibro;
