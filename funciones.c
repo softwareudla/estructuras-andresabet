@@ -16,7 +16,7 @@ void registrarLibro(struct Libro libros[], int *contador) {
         printf("Ingrese ID del libro): ");
         scanf("%d", &nuevoLibro.id);
         if (nuevoLibro.id <= 0) {
-            printf("Error: El ID debe ser un número positivo mayor que cero.\n");
+            printf("Error: El ID debe ser un numero positivo.\n");
         }
     } while (nuevoLibro.id <= 0); 
 
