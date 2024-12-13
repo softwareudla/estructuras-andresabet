@@ -33,13 +33,15 @@ void registrarLibro(struct Libro libros[], int *contador) {
     scanf(" %[^\n]", nuevoLibro.titulo);
     printf("Ingrese autor del libro: ");
     scanf(" %[^\n]", nuevoLibro.autor);
-    do {
-        printf("Ingrese año de publicacion: ");
+     do {
+        printf("Ingrese anio de publicacion: ");
         scanf("%d", &nuevoLibro.anio);
         if (nuevoLibro.anio <= 0) {
-            printf("Error: El año de publicacion no debe ser negativo.\n");
+            printf("Error: El anio de publicacion debe ser mayor a cero.\n");
+        } else if (nuevoLibro.anio > 2024) {
+            printf("Error: El anio de publicacion no puede ser mayor a 2024.\n");
         }
-    } while (nuevoLibro.anio <= 0);
+    } while (nuevoLibro.anio <= 0 || nuevoLibro.anio > 2024);
     strcpy(nuevoLibro.estado, DISPONIBLE);
 
     libros[*contador] = nuevoLibro;
