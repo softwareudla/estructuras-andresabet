@@ -13,12 +13,12 @@ void registrarLibro(struct Libro libros[], int *contador) {
     struct Libro nuevoLibro;
     printf("\n--- Registrar Libro ---\n");
     do {
-        printf("Ingrese ID del libro (debe ser un número positivo mayor que cero): ");
+        printf("Ingrese ID del libro): ");
         scanf("%d", &nuevoLibro.id);
         if (nuevoLibro.id <= 0) {
             printf("Error: El ID debe ser un número positivo mayor que cero.\n");
         }
-    } while (nuevoLibro.id <= 0);
+    } while (nuevoLibro.id <= 0); 
 
   
     // Validar ID único
