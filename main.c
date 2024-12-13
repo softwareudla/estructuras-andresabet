@@ -57,7 +57,7 @@ int main() {
 // Implementación de funciones
 int menu() {
     int opcion;
-    printf("\n--- Menú Biblioteca ---\n");
+    printf("\n--- Menu Biblioteca ---\n");
     printf("1. Registrar libro\n");
     printf("2. Mostrar lista de libros\n");
     printf("3. Buscar libro por ID\n");
@@ -65,7 +65,7 @@ int menu() {
     printf("5. Actualizar estado del libro\n");
     printf("6. Eliminar libro\n");
     printf("7. Salir\n");
-    printf("Seleccione una opción: ");
+    printf("Seleccione una opcion: ");
     scanf("%d", &opcion);
     return opcion;
 }
