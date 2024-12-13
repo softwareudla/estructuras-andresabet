@@ -32,7 +32,7 @@ int main() {
             }
             case 4: {
                 char titulo[100];
-                printf("Ingrese el título del libro a buscar: ");
+                printf("Ingrese el titulo del libro a buscar: ");
                 scanf(" %[^\n]", titulo);
                 buscarLibroPorTitulo(libros, contador, titulo);
                 break;
@@ -47,7 +47,7 @@ int main() {
                 printf("Saliendo del programa...\n");
                 break;
             default:
-                printf("Opción no válida. Intente de nuevo.\n");
+                printf("Opcion no valida. Intente de nuevo.\n");
         }
     } while (opc != 7);
 
